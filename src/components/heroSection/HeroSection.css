@@ -1,0 +1,79 @@
+
+
+Container settings
+.portfolio-container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+   /* Animation for the name */
+   animation: slide-in-left 1s ease-out forwards;
+}
+
+/* Header section */
+.portfolio-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Name */
+.portfolio-name {
+  font-size: 6rem;
+  padding: 130px;
+  /* font-weight: bold; */
+  position: relative;
+  z-index: 1;
+}
+/* Profile image */
+.profile-image {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-0deg); /* Rotates the image by 10 degrees */
+  width: 750px; /* Decrease width slightly */
+  height: 1000px;
+  z-index: 0;
+
+  /* Crop the image to show less vertically and horizontally */
+  clip-path: polygon(16% 8%, 70% 0, 78% 39%, 21% 48%);
+}
+
+
+/* Title */
+.portfolio-title {
+  position: relative;
+  font-size: 10rem;
+  /* font-weight: bold; */
+  margin-top: 90px;
+}
+
+/* About section */
+.about-section {
+  position: relative;
+  margin-top: 200px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
